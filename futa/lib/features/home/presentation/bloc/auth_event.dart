@@ -1,0 +1,17 @@
+// presentation/bloc/auth_event.dart
+part of 'auth_bloc.dart';
+
+abstract class AuthEvent {}
+
+class LoginSubmitted extends AuthEvent {
+  final String email;
+  final String password;
+  LoginSubmitted(this.email, this.password);
+}
+
+class RegisterSubmitted extends AuthEvent {
+  final String name;
+  final String email;
+  final String password;
+  RegisterSubmitted(this.name, this.email, this.password);
+}
