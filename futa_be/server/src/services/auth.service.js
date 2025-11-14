@@ -20,6 +20,7 @@ export const dangKyKH_SV = async (name, email, password) => {
   };
 };
 
+
 export const dangNhapKH_SV = async (email, password) => {
   const KhachHang = await khachHang.findOne({ email });
   if (!KhachHang) throw new Error('Email không tồn tại');
