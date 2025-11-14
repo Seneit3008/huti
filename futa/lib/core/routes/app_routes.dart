@@ -1,22 +1,48 @@
 import 'package:flutter/material.dart';
-import '../../features/auth/presentation/pages/login_page.dart';
-import '../../features/auth/presentation/pages/register_page.dart';
-import '../../features/auth/presentation/pages/home_page.dart';
+import '../../features/dangNhapDangKy/presentation/pages/dangNhapKH.dart';
+import '../../features/dangNhapDangKy/presentation/pages/dangNhapNV.dart';
+import '../../features/dangNhapDangKy/presentation/pages/dangKyKH.dart';
+import '../../features/chaoMung/presentation/pages/chaoMungPage.dart';
+import '../../features/trangChuNV/presentation/pages/trangChuNV.dart';
+import '../../features/trangChuKH/presentation/pages/trangChuKH.dart';
+
+import '../../features/datVeXe/presentation/pages/datVeXe.dart';
+import '../../features/datVeXe/presentation/pages/danhSachDiemDi.dart';
 
 class AppRoutes {
-  static const String home = '/';
-  static const String login = '/login';
-  static const String register = '/register';
+
+  static const String chaoMung = '/';
+
+  static const String dangNhapNV = '/dangNhapNV';
+  static const String dangNhapKH = '/dangNhapKH';
+  static const String dangKyKH = '/dangKyKH';
+
+  static const String trangChuNV = '/trangChuNV';
+  static const String trangChuKH = '/trangChuKH';
+
+  static const String datVeXe = '/datVeXe';
+  static const String danhSachDiemDi = '/danhSachDiemDi';
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case home:
-        return MaterialPageRoute(builder: (_) => HomePage());
-      case login:
-        return MaterialPageRoute(builder: (_) => LoginPage());
-      case register:
-        return MaterialPageRoute(builder: (_) => RegisterPage());
+      case chaoMung:
+        return MaterialPageRoute(builder: (_) => ChaoMungPage());
+      case dangNhapKH:
+        return MaterialPageRoute(builder: (_) => DangNhapKHPage());
+      case dangNhapNV:
+        return MaterialPageRoute(builder: (_) => DangNhapNVPage());
+      case dangKyKH:
+        return MaterialPageRoute(builder: (_) => DangKyKHPage());
+      case trangChuNV:
+        return MaterialPageRoute(builder: (_) => TrangChuNV());
+      case trangChuKH:
+        return MaterialPageRoute(builder: (_) => TrangChuKH());
+      case datVeXe:
+        return MaterialPageRoute(builder: (_) => DatVeXe());
+      case danhSachDiemDi:
+        return MaterialPageRoute(builder: (_) => DanhSachDiemDi());
       default:
+        print(settings.name);
         return MaterialPageRoute(
           builder: (_) => const Scaffold(
             body: Center(

@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/di/dependency_injection.dart';
-import 'features/auth/presentation/bloc/auth_bloc.dart';
+import 'features/dangNhapDangKy/presentation/bloc/dangNhapDangKyBloc.dart';
 import 'core/routes/app_routes.dart'; // ✅ import route riêng
-import 'features/auth/presentation/pages/login_page.dart';
+import 'features/dangNhapDangKy/presentation/pages/dangNhapKH.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  final prefs = await SharedPreferences.getInstance();
+  final token = prefs.getString('email');
   await initDependencies(); // Khởi tạo GetIt hoặc các dependency khác
-  runApp(const MyApp());
+  runApp(MyApp(initialRoute: token != null ? '/trangChuNV' : '/'));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final String initialRoute;
+  MyApp({required this.initialRoute});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +36,7 @@ class MyApp extends StatelessWidget {
             border: OutlineInputBorder(),
           ),
         ),
-        initialRoute: AppRoutes.login, // ✅ khởi chạy vào trang Login
+        initialRoute: initialRoute, // ✅ khởi chạy vào trang Login
         onGenerateRoute: AppRoutes.onGenerateRoute, // ✅ dùng route manager
       ),
     );
