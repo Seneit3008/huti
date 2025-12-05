@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../bloc/momo_payment_bloc.dart';
 import '../bloc/momo_payment_event.dart';
@@ -68,6 +69,38 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
     );
   }
 
+  /// 🚀 Mở app MoMo Test bằng deeplink
+  Future<void> _openMomoApp(MomoQrResponse res) async {
+    final link = res.deeplink ?? res.qrCodeUrl;
+
+    if (link.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Không có deeplink/payUrl để mở MoMo')),
+      );
+      return;
+    }
+
+    final uri = Uri.parse(link);
+
+    // KHÔNG dùng canLaunchUrl — Android 11+ sẽ fail nếu không có <queries>
+    try {
+      final ok = await launchUrl(
+        uri,
+        mode: LaunchMode.externalApplication, // → mở app MoMo Test
+      );
+
+      if (!ok) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Không mở được ứng dụng MoMo Test')),
+        );
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Lỗi khi mở MoMo: $e")),
+      );
+    }
+  }
+
   Widget _buildSuccess(MomoQrResponse res) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -84,6 +117,8 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
         const SizedBox(height: 8),
         Text('OrderId: ${res.orderId}'),
         const SizedBox(height: 16),
+
+        /// QR Code hiển thị
         if (res.qrCodeUrl.isNotEmpty)
           QrImageView(
             data: res.qrCodeUrl,
@@ -91,21 +126,44 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
             size: 220,
           )
         else
-          const Text('Không có qrCodeUrl / payUrl trả về'),
+          const Text('Không có QR Code / payUrl trả về'),
+
         const SizedBox(height: 12),
+
         if (res.deeplink != null)
           SelectableText(
             'Deeplink: ${res.deeplink}',
             style: const TextStyle(fontSize: 12),
           ),
+
         const SizedBox(height: 8),
         SelectableText(
           'QR / payUrl: ${res.qrCodeUrl}',
           style: const TextStyle(fontSize: 12),
         ),
+
+        const SizedBox(height: 16),
+
+        /// ✔ Nút mở app MoMo Test
+        ElevatedButton.icon(
+          onPressed: () => _openMomoApp(res),
+          icon: const Icon(Icons.open_in_new),
+          label: const Text('MỞ APP MOMO TEST ĐỂ THANH TOÁN'),
+        ),
+
+        const SizedBox(height: 8),
+
+        /// ✔ Nút trở lại app đặt vé sau khi thanh toán xong
+        OutlinedButton(
+          onPressed: () {
+            Navigator.of(context).pop(true); // trả result cho màn đặt vé
+          },
+          child: const Text('ĐÃ THANH TOÁN XONG • QUAY LẠI APP'),
+        ),
+
         const SizedBox(height: 8),
         const Text(
-          'Dùng app MoMo quét mã này (sandbox) để test.',
+          'Sau khi bấm thanh toán trong MoMo Test, bạn có thể quay lại đây và nhấn nút "ĐÃ THANH TOÁN XONG".',
           style: TextStyle(fontSize: 12, color: Colors.grey),
           textAlign: TextAlign.center,
         ),
@@ -141,6 +199,7 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
                   ),
                 ),
                 const SizedBox(height: 16),
+
                 TextField(
                   controller: _orderIdController,
                   decoration: const InputDecoration(
@@ -149,6 +208,7 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
                   ),
                 ),
                 const SizedBox(height: 12),
+
                 TextField(
                   controller: _amountController,
                   keyboardType: TextInputType.number,
@@ -158,6 +218,7 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
                   ),
                 ),
                 const SizedBox(height: 12),
+
                 TextField(
                   controller: _orderInfoController,
                   decoration: const InputDecoration(
@@ -165,7 +226,9 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
                     border: OutlineInputBorder(),
                   ),
                 ),
+
                 const SizedBox(height: 16),
+
                 ElevatedButton(
                   onPressed: state is MomoPaymentLoading
                       ? null
@@ -178,7 +241,9 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
                   )
                       : const Text('TẠO MÃ QR TEST'),
                 ),
+
                 const SizedBox(height: 24),
+
                 if (state is MomoPaymentSuccess)
                   _buildSuccess(state.response)
                 else if (state is MomoPaymentInitial)
@@ -186,8 +251,6 @@ class _MomoQrTestPageState extends State<MomoQrTestPage> {
                     'Nhập thông tin rồi bấm "TẠO MÃ QR TEST".',
                     textAlign: TextAlign.center,
                   )
-                else
-                  const SizedBox.shrink(),
               ],
             ),
           );
