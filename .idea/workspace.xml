@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20244405-dd58-4a11-a901-b701da7d969e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/pages/banDoBenXe.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/data/datasources/momo_remote_data_source.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/data/models/momo_qr_response_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/data/repositories/momo_payment_repository_impl.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/domain/repositories/momo_payment_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/domain/usecases/create_momo_qr_payment_uc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/presentation/bloc/momo_payment_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/presentation/bloc/momo_payment_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/presentation/bloc/momo_payment_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/presentation/pages/momo_qr_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/features/momo_payment/presentation/pages/momo_qr_test_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/futa/lib/main_momo_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/core/di/dependency_injection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/core/di/dependency_injection.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/core/routes/app_routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/core/routes/app_routes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/data/datasources/auth_remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/data/datasources/datVeXe_DS.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/data/models/user_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/data/models/danhSachBenXe_Model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/data/repositories/auth_repository_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/data/repositories/datVeXe_IMPL.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/domain/entities/user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/domain/entities/danhSachBenXe_ETT.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/domain/repositories/auth_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/domain/repositories/datVeXe_RP.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/domain/usecases/login_user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/domain/usecases/banDoBenXe_UC.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/domain/usecases/register_user.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/bloc/auth_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/bloc/datVeXeBloc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/bloc/auth_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/bloc/datVeXeEvent.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/bloc/auth_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/bloc/datVeXeState.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/pages/BanDoBenXe.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/pages/danhSachDiemDi.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/pages/danhSachDiemDi.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/pages/datVeXe.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/features/datVeXe/presentation/pages/datVeXe.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/futa/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/futa/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/futa/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/.env" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/read.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/read.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/json.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/raw.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/raw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/urlencoded.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/types/urlencoded.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/body-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/.idea/iconv-lite.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/dbcs-codec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/dbcs-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/internal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/sbcs-codec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/sbcs-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/utf16.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/utf32.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/utf32.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/encodings/utf7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/bom-handling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/streams.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/lib/streams.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/node_modules/iconv-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/Changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/utf32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/lib/helpers/merge-exports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/lib/streams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/node_modules/raw-body/node_modules/iconv-lite/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/futa_be/server/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/futa_be/server/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tuvipvannoi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Seneit3008/huti.git&quot;,
+    &quot;accountId&quot;: &quot;8d11a2bc-b4b9-4276-b18a-8b05a102e012&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="36K9yuOq79oNtFSyEm3bIzuldmm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DA4/DA4/futa/lib/features&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DA4\DA4\futa\lib\features" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DA4\DA4\futa\lib" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20244405-dd58-4a11-a901-b701da7d969e" name="Changes" comment="" />
+      <created>1764744653465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764744653465</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/futa/lib/features/momo_payment/domain/repositories/momo_payment_repository.dart</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
