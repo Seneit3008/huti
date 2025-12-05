@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/di/dependency_injection.dart';
-import 'features/dangNhapDangKy/presentation/bloc/dangNhapDangKyBloc.dart';
 import 'core/routes/app_routes.dart'; // ✅ import route riêng
-import 'features/dangNhapDangKy/presentation/pages/dangNhapKH.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+
+import 'package:futa/features/datVeXe/presentation/bloc/datVeXeBloc.dart';
+import 'features/dangNhapDangKy/presentation/bloc/dangNhapDangKyBloc.dart';
+
+
 Future<void> main() async {
+
   WidgetsFlutterBinding.ensureInitialized();
 
   final prefs = await SharedPreferences.getInstance();
   final token = prefs.getString('email');
   await initDependencies(); // Khởi tạo GetIt hoặc các dependency khác
-  runApp(MyApp(initialRoute: token != null ? '/trangChuNV' : '/'));
+  runApp(MyApp(initialRoute: '/'));
+  // runApp(MyApp(initialRoute: token != null ? '/trangChuNV' : '/'));
 }
 
 class MyApp extends StatelessWidget {
@@ -21,12 +26,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //Khai báo bloc
+
     return MultiBlocProvider(
       providers: [
         BlocProvider<AuthBloc>(
           create: (_) => sl<AuthBloc>(), // sl là GetIt instance
         ),
+        BlocProvider<DatVeXeBloc>(
+          create: (_) => sl<DatVeXeBloc>(), // sl là GetIt instance
+        )
       ],
+
+
       child: MaterialApp(
         title: 'Clean Architecture Auth App',
         debugShowCheckedModeBanner: false,

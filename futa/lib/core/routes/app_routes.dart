@@ -5,10 +5,8 @@ import '../../features/dangNhapDangKy/presentation/pages/dangKyKH.dart';
 import '../../features/chaoMung/presentation/pages/chaoMungPage.dart';
 import '../../features/trangChuNV/presentation/pages/trangChuNV.dart';
 import '../../features/trangChuKH/presentation/pages/trangChuKH.dart';
-
 import '../../features/datVeXe/presentation/pages/datVeXe.dart';
 import '../../features/datVeXe/presentation/pages/danhSachDiemDi.dart';
-
 class AppRoutes {
 
   static const String chaoMung = '/';
@@ -17,11 +15,14 @@ class AppRoutes {
   static const String dangNhapKH = '/dangNhapKH';
   static const String dangKyKH = '/dangKyKH';
 
-  static const String trangChuNV = '/trangChuNV';
+
   static const String trangChuKH = '/trangChuKH';
 
   static const String datVeXe = '/datVeXe';
   static const String danhSachDiemDi = '/danhSachDiemDi';
+
+  static const String trangChuNV = '/trangChuNV';
+
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {

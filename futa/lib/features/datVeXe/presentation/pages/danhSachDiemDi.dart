@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'BanDoBenXe.dart';
+import 'package:futa/features/datVeXe/presentation/pages/banDoBenXe.dart';
+import 'banDoBenXe.dart';
 
 class DanhSachDiemDi extends StatefulWidget {
   const DanhSachDiemDi({super.key});
@@ -65,7 +66,7 @@ class _DanhSachDiemDiState extends State<DanhSachDiemDi> {
                   onPressed: () async {
                     final selected = await Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => FreeMapAutocomplete()),
+                      MaterialPageRoute(builder: (_) => BanDoBenXe()),
                     );
                     if (selected != null) {
                       Navigator.pop(context, selected);

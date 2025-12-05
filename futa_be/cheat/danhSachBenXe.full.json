@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Bến xe Gia Lâm",
+    "lat": 21.0484232,
+    "lng": 105.8758399,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Mỹ Đình",
+    "lat": 21.0284297,
+    "lng": 105.7782687,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Giáp Bát",
+    "lat": 21.1472695,
+    "lng": 105.6163035,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Nước Ngầm",
+    "lat": 20.9654452,
+    "lng": 105.8378223,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Yên Nghĩa",
+    "lat": 20.949589,
+    "lng": 105.7431753,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Lương Yên",
+    "lat": 21.0122039,
+    "lng": 105.8632768,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Hà Đông",
+    "lat": 20.9776829,
+    "lng": 105.7851225,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Phía Nam Hà Nội (tạm)",
+    "lat": 21.0024284,
+    "lng": 105.8108966,
+    "province_id": 24
+  },
+  {
+    "name": "Bến xe Miền Đông (cũ)",
+    "lat": 10.8145963,
+    "lng": 106.6392656,
+    "province_id": 56
+  },
+  {
+    "name": "Bến xe Miền Đông (mới)",
+    "lat": 10.8475681,
+    "lng": 106.7637964,
+    "province_id": 56
+  },
+  {
+    "name": "Bến xe Miền Tây",
+    "lat": 10.0553191,
+    "lng": 104.6164626,
+    "province_id": 56
+  },
+  {
+    "name": "Bến xe Cần Thơ",
+    "lat": 10.002685,
+    "lng": 105.7521576,
+    "province_id": 13
+  },
+  {
+    "name": "Bến xe An Giang (Châu Đốc)",
+    "lat": 10.6949003,
+    "lng": 105.132394,
+    "province_id": 1
+  },
+  {
+    "name": "Bến xe Long Xuyên",
+    "lat": 10.3583641,
+    "lng": 105.4341995,
+    "province_id": 1
+  },
+  {
+    "name": "Bến xe Rạch Giá",
+    "lat": 10.0181259,
+    "lng": 104.7948249,
+    "province_id": 32
+  },
+  {
+    "name": "Bến xe Hà Tiên",
+    "lat": 10.3711296,
+    "lng": 104.4879604,
+    "province_id": 32
+  },
+  {
+    "name": "Bến xe Đà Nẵng",
+    "lat": null,
+    "lng": null,
+    "province_id": 15
+  }
+]

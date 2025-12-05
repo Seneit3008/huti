@@ -2,10 +2,9 @@ Cách chạy flutter:
 - flutter clean
 - flutter pub get
 
-Cách chạy nodejs 
+Cách chạy nodejs
 
 - npm run dev
-
 
 https://pub.dev/packages/geolocator 
 - gg map geolocator 

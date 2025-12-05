@@ -1,0 +1,138 @@
+[
+  { "name": "Bến xe Gia Lâm", "province_id": 24 },
+  { "name": "Bến xe Mỹ Đình", "province_id": 24 },
+  { "name": "Bến xe Giáp Bát", "province_id": 24 },
+  { "name": "Bến xe Nước Ngầm", "province_id": 24 },
+  { "name": "Bến xe Yên Nghĩa", "province_id": 24 },
+
+  { "name": "Bến xe Lương Yên", "province_id": 24 },
+  { "name": "Bến xe Hà Đông", "province_id": 24 },
+  { "name": "Bến xe Phía Nam Hà Nội (tạm)", "province_id": 24 },
+
+  { "name": "Bến xe Miền Đông (cũ)", "province_id": 56 },
+  { "name": "Bến xe Miền Đông (mới)", "province_id": 56 },
+  { "name": "Bến xe Miền Tây", "province_id": 56 },
+
+  { "name": "Bến xe Cần Thơ", "province_id": 13 },
+  { "name": "Bến xe An Giang (Châu Đốc)", "province_id": 1 },
+  { "name": "Bến xe Long Xuyên", "province_id": 1 },
+  { "name": "Bến xe Rạch Giá", "province_id": 32 },
+  { "name": "Bến xe Hà Tiên", "province_id": 32 },
+
+  { "name": "Bến xe Đà Nẵng", "province_id": 15 },
+  { "name": "Bến xe Trung tâm Đà Nẵng", "province_id": 15 },
+  { "name": "Bến xe Tam Kỳ", "province_id": 46 },
+
+  { "name": "Bến xe Đà Lạt", "province_id": 35 },
+  { "name": "Bến xe Liên Khương", "province_id": 35 },
+
+  { "name": "Bến xe Vinh", "province_id": 40 },
+  { "name": "Bến xe Thanh Hóa", "province_id": 55 },
+  { "name": "Bến xe Sài Gòn (Trung tâm)", "province_id": 56 },
+
+  { "name": "Bến xe Miền Bắc (Hải Phòng)", "province_id": 27 },
+  { "name": "Bến xe Hải Dương", "province_id": 26 },
+  { "name": "Bến xe Hưng Yên", "province_id": 30 },
+
+  { "name": "Bến xe Nha Trang", "province_id": 31 },
+  { "name": "Bến xe Tuy Hòa", "province_id": 44 },
+  { "name": "Bến xe Quy Nhơn", "province_id": 8 },
+
+  { "name": "Bến xe Buôn Ma Thuột", "province_id": 16 },
+  { "name": "Bến xe Pleiku", "province_id": 21 },
+
+  { "name": "Bến xe Kon Tum", "province_id": 33 },
+  { "name": "Bến xe Sơn La", "province_id": 51 },
+  { "name": "Bến xe Lào Cai", "province_id": 37 },
+  { "name": "Bến xe Hà Giang", "province_id": 22 },
+  { "name": "Bến xe Lai Châu", "province_id": 34 },
+
+  { "name": "Bến xe Điện Biên", "province_id": 18 },
+  { "name": "Bến xe Yên Bái", "province_id": 63 },
+  { "name": "Bến xe Phú Thọ", "province_id": 43 },
+
+  { "name": "Bến xe Hòa Bình", "province_id": 29 },
+  { "name": "Bến xe Thái Nguyên", "province_id": 54 },
+  { "name": "Bến xe Tuyên Quang", "province_id": 60 },
+
+  { "name": "Bến xe Bắc Giang", "province_id": 3 },
+  { "name": "Bến xe Bắc Ninh", "province_id": 6 },
+  { "name": "Bến xe Lạng Sơn", "province_id": 36 },
+
+  { "name": "Bến xe Quảng Ninh (Hạ Long)", "province_id": 48 },
+  { "name": "Bến xe Quảng Bình (Đồng Hới)", "province_id": 45 },
+  { "name": "Bến xe Quảng Trị", "province_id": 49 },
+
+  { "name": "Bến xe Quảng Nam (Tam Kỳ)", "province_id": 46 },
+  { "name": "Bến xe Quảng Ngãi", "province_id": 47 },
+
+  { "name": "Bến xe Ninh Bình", "province_id": 41 },
+  { "name": "Bến xe Nam Định", "province_id": 39 },
+  { "name": "Bến xe Thái Bình", "province_id": 53 },
+
+  { "name": "Bến xe Phú Yên (Tuy Hòa)", "province_id": 44 },
+  { "name": "Bến xe Bình Định (Quy Nhơn)", "province_id": 8 },
+  { "name": "Bến xe Bình Thuận (Phan Thiết)", "province_id": 11 },
+
+  { "name": "Bến xe Bình Dương (Thuận An)", "province_id": 9 },
+  { "name": "Bến xe Tây Ninh", "province_id": 52 },
+  { "name": "Bến xe Trà Vinh", "province_id": 59 },
+
+  { "name": "Bến xe Vĩnh Long", "province_id": 61 },
+  { "name": "Bến xe Sóc Trăng", "province_id": 50 },
+  { "name": "Bến xe Bạc Liêu", "province_id": 5 },
+
+  { "name": "Bến xe Cà Mau", "province_id": 12 },
+  { "name": "Bến xe Kien Giang (Rạch Giá)", "province_id": 32 },
+  { "name": "Bến xe Tiền Giang (Mỹ Tho)", "province_id": 58 },
+
+  { "name": "Bến xe Vinh Long (Trung tâm)", "province_id": 61 },
+  { "name": "Bến xe Phan Rang (Ninh Thuận)", "province_id": 42 },
+  { "name": "Bến xe Hà Tĩnh (Vinh)", "province_id": 25 },
+
+  { "name": "Bến xe Đồng Hới (Quảng Bình)", "province_id": 45 },
+  { "name": "Bến xe Quảng Trị (Đông Hà)", "province_id": 49 },
+
+  { "name": "Bến xe Bắc Kạn", "province_id": 4 },
+  { "name": "Bến xe Cao Bằng", "province_id": 14 },
+
+  { "name": "Bến xe Nam Cửa Lò", "province_id": 40 },
+  { "name": "Bến xe Sông Công", "province_id": 54 },
+
+  { "name": "Bến xe Bến Tre", "province_id": 7 },
+  { "name": "Bến xe Sóc Trăng Trung tâm", "province_id": 50 },
+
+  { "name": "Bến xe Móng Cái", "province_id": 48 },
+  { "name": "Bến xe Uông Bí", "province_id": 48 },
+
+  { "name": "Bến xe Biên Hòa", "province_id": 19 },
+  { "name": "Bến xe Long Khánh", "province_id": 19 },
+
+  { "name": "Bến xe Phan Thiết", "province_id": 11 },
+  { "name": "Bến xe Hàm Thuận Nam", "province_id": 11 },
+
+  { "name": "Bến xe Châu Đốc", "province_id": 1 },
+  { "name": "Bến xe Vạn Ninh", "province_id": 31 },
+
+  { "name": "Bến xe Sa Đéc", "province_id": 20 },
+  { "name": "Bến xe Hậu Giang", "province_id": 28 },
+
+  { "name": "Bến xe Tân An (Long An)", "province_id": 38 },
+  { "name": "Bến xe Củ Chi (TPHCM)", "province_id": 56 },
+
+  { "name": "Bến xe Phú Quốc", "province_id": 32 },
+  { "name": "Bến xe Rạch Miễu", "province_id": 57 },
+
+  { "name": "Bến xe Bắc Từ Liêm", "province_id": 24 },
+  { "name": "Bến xe Nam Từ Liêm", "province_id": 24 },
+
+  { "name": "Bến xe Hòa Bình (cũ)", "province_id": 29 },
+  { "name": "Bến xe Thanh Hóa (Trung tâm)", "province_id": 55 },
+
+  { "name": "Bến xe Điện Bàn (Quảng Nam)", "province_id": 46 },
+  { "name": "Bến xe Hội An", "province_id": 46 },
+
+  { "name": "Bến xe Bắc Giang (Trung tâm)", "province_id": 3 },
+  { "name": "Bến xe Bắc Ninh (Trung tâm)", "province_id": 6 }
+
+]
